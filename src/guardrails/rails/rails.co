@@ -1,0 +1,12 @@
+define user asks question specifically about redis vector search
+    "how does redis index vectors?"
+    "what is the purpose of the EF_RUNTIME parameter?"
+    "what redis data structures can be used for vector search?"
+    "what vector distance metrics does redis support?"
+
+define flow vector_question
+    user asks question specifically about redis vector search
+    # Given the following conversation and a follow up question, rephrase the follow up question to be a standalone question.
+    $rephrased = ...
+    $answer = execute rag(question=$rephrased)
+    bot $answer

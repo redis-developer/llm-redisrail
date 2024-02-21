@@ -1,0 +1,39 @@
+services:
+  stack:
+    image: redis/redis-stack-server:latest
+    container_name: stack
+    ports:
+      - 6379
+    healthcheck:
+      test: redis-cli ping
+      interval: 2s
+      timeout: 30s
+      retries: 5
+      start_period: 2s
+    networks:
+      re_cluster:
+        ipv4_address: 192.168.20.100
+
+  bot:
+    build:
+      context: .
+      dockerfile: $PWD/bot/Dockerfile
+    environment:
+      - MODE=rails
+    ports:
+      - 8000
+    depends_on:
+      stack:
+        condition: service_healthy      
+    networks:
+      re_cluster:
+        ipv4_address: 192.168.20.101
+
+networks:
+  re_cluster:
+    name: re_network
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 192.168.20.0/24     
