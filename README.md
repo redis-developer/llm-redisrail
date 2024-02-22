@@ -14,11 +14,11 @@ This is a demo of usage of Redis as a vector store for Retrieval Augmented Gener
 Content from the Redis online documentation of Redis Vector Search is used for the RAG content.  For the Guardrails implementation, questions and answers are restricted to the topic of Redis Vector Search.
 
 ## Architecture <a name="architecture"></a>
-High-level Architecture
+### High-level Architecture
 
 ![architecture](https://docs.google.com/drawings/d/e/2PACX-1vTY5N2ZLu7fwy-DuFQ1T8Taf6r-jJOVOsKPlyC6I_dhxH5Y6A2lQsO3LaPYlsIPXmdl5kAfBQlBj3Z8/pub?w=976&h=354)  
 
-Application-level Architecture
+### Application-level Architecture
 
 ![app](https://docs.google.com/drawings/d/e/2PACX-1vQ7uH_ho38iDeOBd8YRY1ybsVqYV41CxTYs4um6t2ytdSk7kRzKiZn9R-jE8p_0ENc65QVFI4Ta82ui/pub?w=815&h=713)
  
