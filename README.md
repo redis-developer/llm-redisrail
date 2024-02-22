@@ -32,6 +32,8 @@ Content from the Redis online documentation of Redis Vector Search is used for t
 - Docker
 - Docker Compose
 - python3
+- git
+- pip
 
 ## Installation <a name="installation"></a>
 ```bash
