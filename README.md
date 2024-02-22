@@ -36,6 +36,7 @@ Content from the Redis online documentation of Redis Vector Search is used for t
 ## Installation <a name="installation"></a>
 ```bash
 git clone https://github.com/redis-developer/llm-redisrail.git && cd llm-redisrail
+pip install -qU python-dotenv redis bs4 langchain langchain_openai
 ```
 - Edit the .env_template file with your OpenAI key and rename the file to .env
 - By default, the guardrailed bot is executed.  If you want a non-railed bot, change the MODE variable in docker-compose to 'chain'.
