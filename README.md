@@ -35,7 +35,7 @@ Application-level Architecture
 
 ## Installation <a name="installation"></a>
 ```bash
-git clone https://github.com/Redislabs-Solution-Architects/llm-redisrail.git && cd llm-redisrail
+git clone https://github.com/redis-developer/llm-redisrail.git && cd llm-redisrail
 ```
 - Edit the .env_template file with your OpenAI key and rename the file to .env
 - By default, the guardrailed bot is executed.  If you want a non-railed bot, change the MODE variable in docker-compose to 'chain'.
